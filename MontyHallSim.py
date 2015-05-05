@@ -204,10 +204,10 @@ def main():
 	
 	# Parse the arguments
 	parser = argparse.ArgumentParser(description="A program to simulate the counter-intuitive statistics of the Monty-Hall problem.")
-	parser.add_argument('-d','--doors',default=3,type=int,metavar='int',help='Designate the number of doors from which a contestant may choose.')
-	parser.add_argument('-t','--trials',default=10000,type=int,metavar='int',help='Designate the number of trials of the Monty-Hall Problem to run.')
-	parser.add_argument('-v','--verbose',default=False,action='store_true',help='Display the details of each trial')
-	parser.add_argument('-p,','--play',default=False,action='store_true',help='Play the game manually. Only one trial will be run.')
+	parser.add_argument('-d','--doors',default=3,type=int,metavar='int',help='Designate the number of doors.')
+	parser.add_argument('-t','--trials',default=10000,type=int,metavar='int',help='Designate the number of trials to run.')
+	parser.add_argument('-v','--verbose',default=False,action='store_true',help='Display the details of each trial.')
+	parser.add_argument('-p','--play',default=False,action='store_true',help='Play the game manually. Only one trial will be run.')
 	args = parser.parse_args()
 	
 	# Run the game manually.
